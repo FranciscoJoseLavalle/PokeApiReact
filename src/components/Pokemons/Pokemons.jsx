@@ -22,6 +22,16 @@ export const Pokemons = () => {
             setOffset(previous => previous + limit)
         }
     })
+    document.addEventListener('touchmove', () => {
+        if (
+            (window.innerHeight + window.scrollY)
+            >= document.body.offsetHeight
+            && !isLoading
+        ) {
+            setIsLoading(true)
+            setOffset(previous => previous + limit)
+        }
+    })
 
     useEffect(() => {
         getAllPokemons()
