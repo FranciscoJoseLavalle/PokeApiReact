@@ -22,7 +22,7 @@ export const Pokemons = () => {
             setOffset(previous => previous + limit)
         }
     })
-    document.addEventListener('touchmove', () => {
+    window.addEventListener('touchmove', () => {
         if (
             (window.innerHeight + window.scrollY)
             >= document.body.offsetHeight
