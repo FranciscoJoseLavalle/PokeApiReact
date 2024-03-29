@@ -1,0 +1,76 @@
+.pokemon {
+    background: linear-gradient(#5C98DD, #c6dcff);
+    color: #fff;
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 30%;
+    width: 100%;
+    min-width: 12rem;
+    max-width: 20rem;
+    border-radius: 1.5rem;
+    display: flex;
+    gap: .25rem;
+    flex-direction: column;
+    position: relative;
+}
+
+.pokemon__id {
+    color: #20101000;
+    font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+.pokemon__types {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.pokemon__types>div {
+    text-transform: uppercase;
+    background-color: #fb0;
+    padding: .15rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.pokemon>img {
+    width: 100%;
+}
+
+.pokemon__name {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #222;
+    text-align: center;
+}
+
+.pokemon__stats {
+    display: flex;
+    gap: .5rem;
+    justify-content: space-evenly;
+    background-color: #5C98DD;
+    box-shadow: inset #2f71bd 0 0 10px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: .5rem;
+}
+
+.pokemon__stats>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
